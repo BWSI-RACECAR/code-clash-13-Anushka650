@@ -50,13 +50,9 @@ class Solution:
         second_profit = 0
         for price in prices:
             first_buy = min(first_buy, price)
-            print(first_buy)
             first_profit = max(first_profit, price - first_buy)
-            print(first_profit)
             second_buy = min(second_buy, price - first_profit)
-            print(second_buy)
             second_profit = max(second_profit, price - second_buy)
-            print(second_profit)
         return second_profit
 
 
